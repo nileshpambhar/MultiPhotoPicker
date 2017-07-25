@@ -55,11 +55,8 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode != RESULT_OK) {
             return;
         }
-
-
         if (resultCode == -1 && requestCode == PickImageActivity.PICKER_REQUEST_CODE) {
             this.pathList = intent.getExtras().getStringArrayList(PickImageActivity.KEY_DATA_RESULT);
-            //C0771L.m29d(TAG, "LIST IMG: " + (this.pathList != null ? this.pathList.toString() : "ARR NULL"));
             if (this.pathList != null && !this.pathList.isEmpty()) {
                 StringBuilder sb=new StringBuilder("");
                 for(int i=0;i<pathList.size();i++) {
