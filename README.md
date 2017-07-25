@@ -27,7 +27,7 @@ Step 1. Add the JitPack repository to your build file
   Step 2. Add the dependency
   
   	dependencies {
-	        compile 'com.github.nileshpambhar:MultiPhotoPicker:v1.1'
+	        compile 'com.github.nileshpambhar:MultiPhotoPicker:v1.1.1'
 	}
 
 
