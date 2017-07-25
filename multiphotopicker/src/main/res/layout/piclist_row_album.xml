@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5.0dip">
+
+    <RelativeLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip">
+
+        <ImageView
+            android:id="@+id/icon_album"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="3.0dip"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/iconNext"
+            android:layout_toRightOf="@+id/icon_album"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5.0dip">
+
+            <TextView
+                android:id="@+id/name_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Name album"
+                android:textColor="#ff161616"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/path_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="sdcard/photo/0/new"
+                android:textColor="#888888"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iconNext"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/piclist_icon_next" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="#ffe4e4e4" />
+    </RelativeLayout>
+</RelativeLayout>

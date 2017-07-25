@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Multi Photo Picker</string>
+    <string name="pick_image_from_gallery">PICK IMAGE FROM GALLERY</string>
+    <string name="text_images">%1$d Images</string>
+    <string name="text_button_done">Done</string>
+    <string name="text_title_activity_album">Select photos</string>
+    <string name="text_title_dialog_sort_by_album">Sort album by</string>
+    <string name="text_title_dialog_sort_by_photo">Sort photo by</string>
+    <string name="action_sort">Sort</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <GridView
+        android:id="@+id/gridViewAlbum"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layoutBottom"
+        android:gravity="center"
+        android:numColumns="1"
+        android:stretchMode="columnWidth" />
+
+    <GridView
+        android:id="@+id/gridViewListAlbum"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layoutBottom"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ff262626"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTotalImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="@string/text_images"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/piclist_selector_btn_done"
+                android:gravity="center"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="30.0dip"
+                android:paddingTop="5.0dip"
+                android:text="@string/text_button_done"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ff262626">
+
+            <LinearLayout
+                android:id="@+id/layoutListItemSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
