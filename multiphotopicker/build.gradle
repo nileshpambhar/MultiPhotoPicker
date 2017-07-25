@@ -26,6 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     testCompile 'junit:junit:4.12'
-
     compile 'com.github.bumptech.glide:glide:3.8.0'
 }
