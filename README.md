@@ -3,6 +3,14 @@
 [![](https://jitpack.io/v/nileshpambhar/MultiPhotoPicker.svg)](https://jitpack.io/#nileshpambhar/MultiPhotoPicker)
 
 
+Screen1
+
+![Alt text](https://github.com/nileshpambhar/MultiPhotoPicker/blob/master/Screenshots/Screen1.png "Album list")
+
+Screen2
+
+![Alt text](https://github.com/nileshpambhar/MultiPhotoPicker/blob/master/Screenshots/Screen2.png "Photo list")
+
 How to
 
 To get a Git project into your build:
