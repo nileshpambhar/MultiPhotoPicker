@@ -52,6 +52,7 @@ public class PickImageActivity extends AppCompatActivity implements  OnClickList
     public static final String KEY_DATA_RESULT = "KEY_DATA_RESULT";
     public static final String KEY_LIMIT_MAX_IMAGE = "KEY_LIMIT_MAX_IMAGE";
     public static final String KEY_LIMIT_MIN_IMAGE = "KEY_LIMIT_MIN_IMAGE";
+    public static final int PICKER_REQUEST_CODE=1001;
     private final String TAG = "PickImageActivity";
     AlbumAdapter albumAdapter;
     ArrayList<ImageModel> dataAlbum = new ArrayList();

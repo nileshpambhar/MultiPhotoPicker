@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.view.PointerIconCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             Intent mIntent = new Intent(this, PickImageActivity.class);
             mIntent.putExtra(PickImageActivity.KEY_LIMIT_MAX_IMAGE, 60);
             mIntent.putExtra(PickImageActivity.KEY_LIMIT_MIN_IMAGE, 3);
-            startActivityForResult(mIntent, PointerIconCompat.TYPE_CONTEXT_MENU);
+            startActivityForResult(mIntent, PickImageActivity.PICKER_REQUEST_CODE);
         } else {
             requestPermission(Manifest.permission.READ_EXTERNAL_STORAGE, READ_STORAGE_CODE);
         }
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        if (resultCode == -1 && requestCode == PointerIconCompat.TYPE_CONTEXT_MENU) {
+        if (resultCode == -1 && requestCode == PickImageActivity.PICKER_REQUEST_CODE) {
             this.pathList = intent.getExtras().getStringArrayList(PickImageActivity.KEY_DATA_RESULT);
             //C0771L.m29d(TAG, "LIST IMG: " + (this.pathList != null ? this.pathList.toString() : "ARR NULL"));
             if (this.pathList != null && !this.pathList.isEmpty()) {
